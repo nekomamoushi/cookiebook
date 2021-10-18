@@ -1,6 +1,13 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const title = "CookieBook";
+const description = "CookieBook - Personal Documentation";
+const url =
+  process.env.NODE_ENV !== "development"
+    ? "https://github.com/nekomamoushi/cookiebook"
+    : "http://localhost:3000";
+
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
@@ -8,7 +15,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "CookieBook",
   tagline: "Cookies are cool",
-  url: "https://github.com/nekomamoushi/cookiebook",
+  url: url,
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -40,6 +47,12 @@ const config = {
       colorMode: {
         defaultMode: "dark",
       },
+      metadatas: [
+        { name: "description", content: description },
+        { name: "og:title", content: title },
+        { name: "og:type", content: "website" },
+        { name: "og:description", content: description },
+      ],
       navbar: {
         title: "CookieBook",
         logo: {
