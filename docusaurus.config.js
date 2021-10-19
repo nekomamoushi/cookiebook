@@ -5,7 +5,7 @@ const title = "CookieBook";
 const description = "CookieBook - Personal Documentation";
 const url =
   process.env.NODE_ENV !== "development"
-    ? "https://github.com/nekomamoushi/cookiebook"
+    ? "https://nekomamoushi.github.io/cookiebook"
     : "http://localhost:3000";
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
@@ -16,7 +16,7 @@ const config = {
   title: "CookieBook",
   tagline: "Cookies are cool",
   url: url,
-  baseUrl: "/",
+  baseUrl: "/cookiebook",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
