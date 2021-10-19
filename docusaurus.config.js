@@ -46,6 +46,7 @@ const config = {
     ({
       colorMode: {
         defaultMode: "dark",
+        disableSwitch: true,
       },
       metadatas: [
         { name: "description", content: description },
