@@ -16,7 +16,7 @@ const config = {
   title: "CookieBook",
   tagline: "Cookies are cool",
   url: url,
-  baseUrl: "/",
+  baseUrl: "/cookiebook/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
